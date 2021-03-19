@@ -4,11 +4,7 @@ const cors = require('cors')
 const app = express()
 
 const corsOptions = {
-    origin: [
-        'https://miage-tournament.tk',
-        'https://dev.miage-tournament.tk',
-        'http://localhost:3000',
-    ],
+    origin: ['http://localhost:3000'],
 }
 
 app.use(cors(corsOptions))
